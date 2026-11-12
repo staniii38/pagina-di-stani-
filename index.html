@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Il mio sito</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            background: #f8f9fb;
+            color: #202124;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            width: 100%;
+            padding: 28px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .status {
+            font-size: 13px;
+            color: #777;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .tag {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 7vw, 68px);
+            font-weight: 650;
+            letter-spacing: -3px;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #777;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #777;
+            max-width: 420px;
+            margin-bottom: 40px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 30px;
+            background: #202124;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background: #444;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .arrow {
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .button:hover .arrow {
+            transform: translateX(4px);
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 22px 6%;
+            }
+
+            h1 {
+                letter-spacing: -2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">MY WEBSITE.</div>
+        <div class="status">● Online</div>
+    </header>
+
+    <main>
+        <div class="tag">WELCOME</div>
+
+        <h1>Benvenuto<span>.</span></h1>
+
+        <p class="description">
+            Questo è il mio spazio personale.
+            Premi il pulsante qui sotto per continuare.
+        </p>
+
+        <!-- INSERISCI IL TUO LINK QUI -->
+        <a href="INSERISCI_IL_TUO_LINK" class="button">
+            Scopri di più
+            <span class="arrow">→</span>
+        </a>
+    </main>
+
+    <footer>
+        © 2026 MY WEBSITE. All rights reserved.
+    </footer>
+
+</body>
+</html>

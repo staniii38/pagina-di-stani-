@@ -79,6 +79,13 @@
             margin-bottom: 40px;
         }
 
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .button {
             display: inline-flex;
             align-items: center;
@@ -123,6 +130,16 @@
             h1 {
                 letter-spacing: -2px;
             }
+
+            .buttons {
+                flex-direction: column;
+                width: 100%;
+                max-width: 240px;
+            }
+
+            .button {
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -141,14 +158,24 @@
 
         <p class="description">
             Questo è il mio spazio personale.
-            Premi il pulsante qui sotto per continuare.
+            Scegli una delle opzioni qui sotto per continuare.
         </p>
 
-        <!-- INSERISCI IL TUO LINK QUI -->
-        <a href="INSERISCI_IL_TUO_LINK" class="button">
-            Scopri di più
-            <span class="arrow">→</span>
-        </a>
+        <div class="buttons">
+
+            <!-- PRIMO LINK -->
+            <a href="http://192.168.112.212/dashboard/" class="button">
+                Primo pulsante
+                <span class="arrow">→</span>
+            </a>
+
+            <!-- SECONDO LINK -->
+            <a href="http://192.168.112.212/crud/" class="button">
+                Secondo pulsante
+                <span class="arrow">→</span>
+            </a>
+
+        </div>
     </main>
 
     <footer>
